@@ -22,7 +22,7 @@
 						</div>-->
 					</div>
 				</div>
-	
+
 			<?php $i++; endwhile; else: ?>
 			<div class="col-sm-12">
 				<p>Sorry, no posts to list</p>
@@ -57,10 +57,10 @@
 					<li><a href="#">workshops<span class="border1"></span></a></li>
 					<li><a href="#">talkshows<span class="border1"></span></a></li>
 					<li><a href="#">panels<span class="border1"></span></a></li>
-					<li><a href="#">awards<span class="border1"></span></a></li> 
+					<li><a href="#">awards<span class="border1"></span></a></li>
 					<li><a href="#">where<span class="border1"></span></a></li>
 					<li><a href="#">Get music Pro Awards passport<span class="border1"></span></a></li>
-					<li><a href="#">multimedia</a></li> 
+					<li><a href="#">multimedia</a></li>
 
                 <?php else: ?>
 
@@ -68,10 +68,10 @@
                     <li><a href="#">workshops<span class="border1"></span></a></li>
                     <li><a href="#">talkshows<span class="border1"></span></a></li>
                     <li><a href="#">painéis<span class="border1"></span></a></li>
-                    <li><a href="#">premiação<span class="border1"></span></a></li> 
+                    <li><a href="#">premiação<span class="border1"></span></a></li>
                     <li><a href="#">hospedagem<span class="border1"></span></a></li>
                     <li><a href="#">como comprar o passaporte<span class="border1"></span></a></li>
-                    <li><a href="#">multimídia</a></li> 
+                    <li><a href="#">multimídia</a></li>
 
                 <?php endif; ?>
 				</ul>
@@ -96,8 +96,8 @@
 						'after' 			=> '',
 						'link_before' 		=> '',
 						'link_after' 		=> '<span class="border1"></span>',
-						'depth' 			=> 0, 
-						'fallback_cb' 		=> '' 
+						'depth' 			=> 0,
+						'fallback_cb' 		=> ''
 					)
 				); ?>
 			</div>
@@ -397,8 +397,8 @@
 					'after' 			=> '',
 					'link_before' 		=> '',
 					'link_after' 		=> '<span class="border2"></span>',
-					'depth' 			=> 0, 
-					'fallback_cb' 		=> '' 
+					'depth' 			=> 0,
+					'fallback_cb' 		=> ''
 				)
 			); ?>
 			</div>
@@ -411,7 +411,7 @@
         <div class="antesfooter">
 			<h2><?php _e( 'notícias', 'ppm_lang' ); ?></h2>
 			<div class="row">
-			<?php 
+			<?php
 			$news = new WP_Query( array( 'category_name' => 'noticias' ) );
 			if ( $news->have_posts() ) : while ( $news->have_posts() ) : $news->the_post(); ?>
 				<div class="col-md-4 afooter1">
@@ -422,8 +422,24 @@
 						<span><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_footer1.png"><a href="<?php the_permalink(); ?>"><?php _e( 'Leia mais', 'ppm_lang' ); ?></a></span>
 					</div>
 				</div>
-	
-			<?php endwhile; else: ?>
+
+			<?php endwhile; ?>
+                <div class="all-news-box col-md-12">
+                    <?php
+                    // Get the ID of a given category
+                    if (current_lang() == 'pt') {
+                        $category_id = get_cat_ID( 'noticias' );
+                    } else {
+                        $category_id = get_cat_ID( 'news' );
+                    };
+
+                    // Get the URL of this category
+                    $category_link = get_category_link( $category_id );
+                    ?>
+                    <a href="<?php echo esc_url( $category_link ); ?>"><?php _e('Todas as notícias', 'ppm_lang'); ?></a>
+                </div>
+
+            <?php else: ?>
 			<div class="col-sm-12">
 				<p>Sorry, no posts to list</p>
 			</div>
@@ -432,4 +448,45 @@
 		</div>
 	</div>
 </div>
+    <?php
+    $enable_partners_carousel = get_field('habilitar_carrossel_de_parceiros', 'option');
+    if($enable_partners_carousel): ?>
+    <div id="partners_carousel" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <?php $carousel_itens = get_field('itens_do_carrossel', 'option'); // echo '<pre>'; var_dump($carousel_itens); echo '</pre>'; ?>
+                <div class="center">
+                    <a href="#" id="prev"><i class="fa fa-angle-left"></i></a>
+                    <a href="#" id="next"><i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="cycle-slideshow"
+                    data-cycle-log="false"
+                    data-cycle-fx="carousel"
+                    data-cycle-timeout="0"
+                    data-cycle-carousel-visible="5"
+                    data-cycle-next="#next"
+                    data-cycle-prev="#prev"
+                    data-cycle-pager="#pager"
+                    data-cycle-carousel-fluid="true"
+                    data-cycle-pager-template='<i class="fa fa-circle"></i>'
+                    data-cycle-slides="> .partner"
+                    >
+                    <?php foreach ($carousel_itens as $carousel_item) { ?>
+                        <div class="partner">
+                            <div class="relative-box">
+                            <?php if( $carousel_item['link'] !== '' ){ echo '<a href="' . $carousel_item['link'] . '">'; } ?>
+                                <span><?php if( $carousel_item['texto'] !== '' ){ echo $carousel_item['texto']; } ?></span>
+                                <img src="<?php echo $carousel_item['imagem']['sizes']['archive-thumb']; ?>">
+                            <?php if( $carousel_item['link'] !== '' ){ echo '</a>'; } ?>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+
+                <div class="cycle-pager" id="pager"></div>
+            </div>
+        </div>
+    </div>
+
+    <?php endif; ?>
 <?php get_footer(); ?>

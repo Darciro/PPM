@@ -43,6 +43,8 @@ function ppm_scripts()
 	wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), false, true);
 	wp_enqueue_script('jquery-mask', get_template_directory_uri() . '/assets/js/jquery.mask.min.js', array('jquery'), false, true);
 	wp_enqueue_script('jquery-fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.pack.js', array('jquery'), false, true);
+	wp_enqueue_script('jquery.cycle2', get_template_directory_uri() . '/assets/js/jquery.cycle2.min.js', array('jquery'), false, true);
+	wp_enqueue_script('jquery.cycle2.carousel', get_template_directory_uri() . '/assets/js/jquery.cycle2.carousel.min.js', array('jquery'), false, true);
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), false, true);
 
 
