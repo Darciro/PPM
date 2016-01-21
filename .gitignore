@@ -1,0 +1,9 @@
+.komodotools
+*.komodoproject
+.buildpath
+.project
+.htaccess
+.idea
+.settings/
+wp-config.php
+wp-content/uploads/

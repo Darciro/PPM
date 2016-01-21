@@ -1,0 +1,28 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+#inscricao_form .acf-field:first-of-type > .acf-label,
+.userpro-message.userpro-message-demo{
+    display: none;
+}
+
+.hidden,
+.acf-input-table > tbody > tr > td.remove{
+	display: none !important;
+}
+
+#inscricao_form .acf-field[data-name="modalidades"]:first-of-type > .acf-label,
+    #inscricao_form .acf-field[data-name="link"]:first-of-type > .acf-label{
+    display: block
+}

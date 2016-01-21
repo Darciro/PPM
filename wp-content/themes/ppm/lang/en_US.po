@@ -1,0 +1,303 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PPM\n"
+"POT-Creation-Date: 2015-11-20 00:51-0200\n"
+"PO-Revision-Date: 2015-11-20 00:52-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: a-quem-se-destina.php:34 inc/menu_informacoes-2.php:3
+#: inc/menu_informacoes.php:3 regulamento.php:248
+msgid "Informações"
+msgstr "Information"
+
+#: a-quem-se-destina.php:37
+msgid "Artistas ou Intérpretes"
+msgstr "Artists and Performers"
+
+#: archive.php:29 index.php:368
+msgid "Leia mais"
+msgstr "Read more"
+
+#: footer.php:6 header.php:39
+msgid "Inscreva-se"
+msgstr "Sign up"
+
+#: footer.php:9 header.php:42
+msgid "Entrar"
+msgstr "Log in"
+
+#: footer.php:58
+msgid "Copyright © 2015 todos os direitos reservados"
+msgstr "Copyright © 2015 all rights reserved"
+
+#: header.php:59
+msgid "Já possui cadastro?"
+msgstr "Already registered?"
+
+#: inc/cpt_depoimentos.php:11
+msgid "Criar novo depoimento"
+msgstr "New testimonial"
+
+#: inc/cpt_depoimentos.php:12
+msgid "Editar depoimento"
+msgstr "Edit testimonial"
+
+#: inc/cpt_depoimentos.php:13 inc/cpt_talkshows.php:13
+msgid "Novo"
+msgstr "New"
+
+#: inc/cpt_depoimentos.php:14
+msgid "Todos os depoimentos"
+msgstr "All testimonials"
+
+#: inc/cpt_depoimentos.php:15
+msgid "Visualizar depoimento"
+msgstr "See testimonial"
+
+#: inc/cpt_depoimentos.php:16
+msgid "Pesquisar por depoimento"
+msgstr "Search for testimonial"
+
+#: inc/cpt_depoimentos.php:17 inc/cpt_gallery.php:17 inc/cpt_talkshows.php:17
+msgid "Nada encontrado"
+msgstr "Nothing found"
+
+#: inc/cpt_depoimentos.php:18 inc/cpt_gallery.php:18 inc/cpt_talkshows.php:18
+msgid "Nada encontrado na lixeira"
+msgstr "Nothing found on trash"
+
+#: inc/cpt_depoimentos.php:45 inc/menu_informacoes.php:10
+msgid "Depoimentos"
+msgstr "Testimonials"
+
+#: inc/cpt_depoimentos.php:74 inc/cpt_gallery.php:74 inc/cpt_talkshows.php:74
+msgid "Sem categorias"
+msgstr "Uncategorized"
+
+#: inc/cpt_gallery.php:11
+msgid "Criar nova galeria"
+msgstr "New Gallery"
+
+#: inc/cpt_gallery.php:12
+msgid "Editar galeria"
+msgstr "Edit gallery"
+
+#: inc/cpt_gallery.php:13
+msgid "Nova"
+msgstr "New"
+
+#: inc/cpt_gallery.php:14
+msgid "Todos as galerias"
+msgstr "All galleries"
+
+#: inc/cpt_gallery.php:15
+msgid "Visualizar galeria"
+msgstr "See gallery"
+
+#: inc/cpt_gallery.php:16
+msgid "Pesquisar por galeria"
+msgstr "Search for gallery"
+
+#: inc/cpt_gallery.php:45
+msgid "Galerias"
+msgstr "Galleries"
+
+#: inc/cpt_talkshows.php:11
+msgid "Criar novo talkshow"
+msgstr "New talkshow"
+
+#: inc/cpt_talkshows.php:12
+msgid "Editar talkshow"
+msgstr "Edit talkshow"
+
+#: inc/cpt_talkshows.php:14
+msgid "Todos os talkshows"
+msgstr "All talkshows"
+
+#: inc/cpt_talkshows.php:15
+msgid "Visualizar talkshow"
+msgstr "See talkshow"
+
+#: inc/cpt_talkshows.php:16
+msgid "Pesquisar por talkshow"
+msgstr "Search for talkshow"
+
+#: inc/cpt_talkshows.php:45
+msgid "Talkshows"
+msgstr "Talkshows"
+
+#: inc/menu_informacoes-2.php:7 index.php:205
+msgid "Criação"
+msgstr "Creation"
+
+#: inc/menu_informacoes-2.php:8 index.php:208
+msgid "Produção"
+msgstr "Production"
+
+#: inc/menu_informacoes-2.php:9 index.php:211
+msgid "Convergência"
+msgstr "Distribution"
+
+#: inc/menu_informacoes-2.php:11
+msgid "Data do Evento"
+msgstr "Date"
+
+#: inc/menu_informacoes-2.php:12
+msgid "Compre seu Ingresso"
+msgstr "Get tickets"
+
+#: inc/menu_informacoes-2.php:13
+msgid "Como Chegar"
+msgstr "Venue"
+
+#: inc/menu_informacoes-2.php:14
+msgid "Quem pode votar?"
+msgstr "Who can vote?"
+
+#: inc/menu_informacoes-2.php:15
+msgid "Etapas de votação"
+msgstr "Voting steps"
+
+#: inc/menu_informacoes-2.php:16
+msgid ""
+"Quantos serão Pré-Selecionados pelos Profissionais previamente cadastrados "
+"em cada categoria?"
+msgstr ""
+"How many will be pre-selected by professionals previously registered in each "
+"category?"
+
+#: inc/menu_informacoes-2.php:17
+msgid ""
+"Quantos serão Selecionados, em cada categoria, pelo público em geral, "
+"artistas e profissionais da música previamente cadastrados?"
+msgstr ""
+"How many are selected in each category by the general public, artists and "
+"professionals previously registered music?"
+
+#: inc/menu_informacoes-2.php:18
+msgid "Dos Prazos Gerais de Votação"
+msgstr "Deadlines of Voting"
+
+#: inc/menu_informacoes.php:7
+msgid "Os Vencedores por categoria"
+msgstr "Winners by category"
+
+#: inc/menu_informacoes.php:8
+msgid "Galeria de fotos"
+msgstr "Photo gallery"
+
+#: inc/menu_informacoes.php:12
+msgid "Cerimônia de premiação"
+msgstr "Awards ceremony"
+
+#: index.php:101 regulamento.php:251
+msgid "Data do evento"
+msgstr "Date"
+
+#: index.php:109 regulamento.php:253
+msgid "Como chegar"
+msgstr "Where"
+
+#: index.php:117 index.php:159
+msgid "O regulamento"
+msgstr "Regulation"
+
+#: index.php:135
+msgid "O homenageado"
+msgstr "Honored"
+
+#: index.php:148
+msgid "Os inscritos"
+msgstr "Subscribers"
+
+#: index.php:173
+msgid "A comissão julgadora"
+msgstr "The jury"
+
+#: index.php:178 index.php:193 index.php:245 index.php:292
+msgid "Veja Mais"
+msgstr "See more"
+
+#: index.php:186
+msgid "Os pré-selecionados"
+msgstr "Preselected"
+
+#: index.php:201
+msgid "As categorias"
+msgstr "Categories"
+
+#: index.php:214
+msgid "Veja todas as categorias"
+msgstr "See all categories"
+
+#: index.php:224
+msgid "A programação"
+msgstr "Programme"
+
+#: index.php:238
+msgid "Os selecionados"
+msgstr "Selecteds"
+
+#: index.php:253
+msgid "A campanha de arrecadação"
+msgstr "MPA Live Funding"
+
+#: index.php:269
+msgid "O local"
+msgstr "The theatre"
+
+#: index.php:282
+msgid "Os vencedores de 2016"
+msgstr "2016 winners"
+
+#: index.php:300
+msgid "Inscrições"
+msgstr "Inscriptions"
+
+#: index.php:358
+msgid "notícias"
+msgstr "news"
+
+#: regulamento.php:252
+msgid "Compre seu ingresso"
+msgstr "Get tickets"
+
+#: sidebar.php:4
+msgid "Outras Notícias"
+msgstr "More news"
+
+#~ msgid "veja mais"
+#~ msgstr "See more"
+
+#~ msgid "Todos os direitos reservados"
+#~ msgstr "All rights reserved"
+
+#~ msgid "data do evento"
+#~ msgstr "event date"
+
+#~ msgid "compre seu ingresso"
+#~ msgstr "buy your ticket"
+
+#~ msgid "como chegar"
+#~ msgstr "how to get"
+
+#~ msgid "saiba tudo sobre a"
+#~ msgstr "Know everything about the"
+
+#~ msgid "1º edição"
+#~ msgstr "1st edition"
+
+#~ msgid "Inscreva-se."
+#~ msgstr "Sign up."

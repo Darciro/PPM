@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PPM - Inscrição plugin\n"
+"POT-Creation-Date: 2015-12-02 07:59-0200\n"
+"PO-Revision-Date: 2015-12-02 08:00-0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-ppm-inscricao-admin.php:257
+msgid "Criar nova inscrição"
+msgstr "New inscription"
+
+#: admin/class-ppm-inscricao-admin.php:258
+msgid "Editar"
+msgstr "Edit"
+
+#: admin/class-ppm-inscricao-admin.php:259
+#: admin/import/subscriber-acf-form.php:31
+msgid "Nova inscrição"
+msgstr "New inscription"
+
+#: admin/class-ppm-inscricao-admin.php:260
+msgid "Todas as inscrições"
+msgstr "All inscription"
+
+#: admin/class-ppm-inscricao-admin.php:261
+msgid "Visualizar inscrição"
+msgstr "See inscription"
+
+#: admin/class-ppm-inscricao-admin.php:262
+msgid "Buscar"
+msgstr "Search"
+
+#: admin/class-ppm-inscricao-admin.php:263
+msgid "Nada encontrado"
+msgstr "Nothing found"
+
+#: admin/class-ppm-inscricao-admin.php:264
+msgid "Nada encontrado na lixeira"
+msgstr "Nothing found on trash"
+
+#: admin/class-ppm-inscricao-admin.php:266
+msgid "Inscrições PPM"
+msgstr "Inscriptions PPM"
+
+#: admin/class-ppm-inscricao-admin.php:294
+msgid "Nome"
+msgstr "Name"
+
+#: admin/class-ppm-inscricao-admin.php:295
+msgid "Email"
+msgstr "Email"
+
+#: admin/import/subscriber-acf-form.php:17
+msgid "Inscrição"
+msgstr "Inscription"
+
+#: admin/import/subscriber-acf-form.php:35
+msgid "Modalidades"
+msgstr "Modalities"
+
+#: admin/import/subscriber-acf-form.php:47
+msgid "Criação"
+msgstr "Creation"
+
+#: admin/import/subscriber-acf-form.php:48
+msgid "Produção"
+msgstr "Production"
+
+#: admin/import/subscriber-acf-form.php:49
+msgid "Convergência"
+msgstr "Distribution"
+
+#: admin/import/subscriber-acf-form.php:63
+msgid "Categorias de criação"
+msgstr "Creation"
+
+#: admin/import/subscriber-acf-form.php:83
+msgid "Melhor Autor"
+msgstr "Best Author"
+
+#: admin/import/subscriber-acf-form.php:84
+msgid "Melhor Instrumentista"
+msgstr "Best Instrumentalist"
+
+#: admin/import/subscriber-acf-form.php:85
+msgid "Melhor Cantor"
+msgstr "Best Singer (Male)"
+
+#: admin/import/subscriber-acf-form.php:86
+msgid "Melhor Cantora"
+msgstr "Best Singer (Female)"
+
+#: admin/import/subscriber-acf-form.php:87
+msgid "Melhor Arranjador"
+msgstr "Best Arranger"
+
+#: admin/import/subscriber-acf-form.php:88
+msgid "Melhor Artista Hip Hop & Rap"
+msgstr "Best Hip Hop & Rap Artist "
+
+#: admin/import/subscriber-acf-form.php:89
+msgid "Melhor Artista Gospel"
+msgstr "Best Gospel Artist"
+
+#: admin/import/subscriber-acf-form.php:90
+msgid "Melhor Artista Instrumental"
+msgstr "Best Instumental Artist"
+
+#: admin/import/subscriber-acf-form.php:91
+msgid "Melhor Artista Rock & Blues"
+msgstr "Best Rock & Blues Artist"
+
+#: admin/import/subscriber-acf-form.php:92
+msgid "Melhor Artista Metal & Hardcore"
+msgstr "Best Metal & Hardcore Artist"
+
+#: admin/import/subscriber-acf-form.php:93
+msgid "Melhor Artista Groove & Pop"
+msgstr "Best Groove & Pop Artist"
+
+#: admin/import/subscriber-acf-form.php:94
+msgid "Melhor Artista Raiz Sertaneja"
+msgstr "Best Country Artist"
+
+#: admin/import/subscriber-acf-form.php:95
+msgid "Melhor Artista MPB"
+msgstr "Best MPB Artist"
+
+#: admin/import/subscriber-acf-form.php:96
+msgid "Melhor Artista Folclore e Cultura Popular"
+msgstr "Best Folk and Popular Culture Artist"
+
+#: admin/import/subscriber-acf-form.php:97
+msgid "Melhor Artista Samba e Choro"
+msgstr "Best Samba Artist"
+
+#: admin/import/subscriber-acf-form.php:111
+msgid "Categorias de produção"
+msgstr "Production"
+
+#: admin/import/subscriber-acf-form.php:131
+msgid "Melhor Editora"
+msgstr "Best Editor"
+
+#: admin/import/subscriber-acf-form.php:132
+msgid "Melhor Produtor Artístico"
+msgstr "Best Artistic Producer"
+
+#: admin/import/subscriber-acf-form.php:133
+msgid "Melhor Produtor Executivo"
+msgstr "Best Executic Producer"
+
+#: admin/import/subscriber-acf-form.php:134
+msgid "Melhor Selo ou Gravadora"
+msgstr "Best Seal or Record company"
+
+#: admin/import/subscriber-acf-form.php:135
+msgid "Melhor Técnico de Gravação"
+msgstr "Best Records Technician"
+
+#: admin/import/subscriber-acf-form.php:136
+msgid "Melhor Técnico de Mixagem"
+msgstr "Best Mix Technician"
+
+#: admin/import/subscriber-acf-form.php:137
+msgid "Melhor Técnico de Masterização"
+msgstr "Best Mastering Technician"
+
+#: admin/import/subscriber-acf-form.php:138
+msgid "Melhor Designer"
+msgstr "Best Designer"
+
+#: admin/import/subscriber-acf-form.php:139
+msgid "Melhor Fotógrafo"
+msgstr "Best Photographer"
+
+#: admin/import/subscriber-acf-form.php:140
+msgid "Melhor Agência de Comunicação Digital"
+msgstr "Best Digital Communications Agency"
+
+#: admin/import/subscriber-acf-form.php:141
+msgid "Melhor Diretor de Vídeo Clips"
+msgstr "Best Video Clips Director "
+
+#: admin/import/subscriber-acf-form.php:142
+msgid "Melhor Produtor de Evento"
+msgstr "Best Events Producer"
+
+#: admin/import/subscriber-acf-form.php:143
+msgid "Melhor Escritório de Agenciamento de Artistas"
+msgstr "Best Artists Agency Office"
+
+#: admin/import/subscriber-acf-form.php:144
+msgid "Melhor Estúdio de Gravação e Mixagem"
+msgstr "Best Recording Studio and Mixing"
+
+#: admin/import/subscriber-acf-form.php:145
+msgid "Melhor Estúdio de Masterização"
+msgstr "Best Mixing Studio "
+
+#: admin/import/subscriber-acf-form.php:159
+msgid "Categorias de convergência"
+msgstr "Convergence"
+
+#: admin/import/subscriber-acf-form.php:179
+msgid "Melhor Distribuidora Digital"
+msgstr "Best Digital Distributor"
+
+#: admin/import/subscriber-acf-form.php:180
+msgid "Melhor Plataforma de Crowdfunding e LiveFunding"
+msgstr "Best Crowdfunding and LiveFunding Plataform"
+
+#: admin/import/subscriber-acf-form.php:181
+msgid "Melhor Festival de Música"
+msgstr "Best Music Festival"
+
+#: admin/import/subscriber-acf-form.php:182
+msgid "Melhor Start Up"
+msgstr "Best Start Up"
+
+#: admin/import/subscriber-acf-form.php:183
+msgid "Melhor DJ"
+msgstr "Best DJ"
+
+#: admin/import/subscriber-acf-form.php:184
+msgid "Melhor Casa Noturna"
+msgstr "Best Club House"
+
+#: admin/import/subscriber-acf-form.php:185
+msgid "Melhor Projeto Cultural Musical"
+msgstr "Best Cultural Project Musical"
+
+#: admin/import/subscriber-acf-form.php:186
+msgid ""
+"Melhor Canal de Divulgação de Música [ Facebook, Twitter, Instagran, Blog]"
+msgstr "Best Music Release Channel [Facebook, Twitter, Instagram, Blog]"
+
+#: admin/import/subscriber-acf-form.php:187
+msgid "Melhor WebTV"
+msgstr "Best WebTV"
+
+#: admin/import/subscriber-acf-form.php:188
+msgid "Melhor Web Rádio"
+msgstr "Best Web Radio"
+
+#: admin/import/subscriber-acf-form.php:189
+msgid "Melhor Rádio Pública"
+msgstr "Best Public Radio"
+
+#: admin/import/subscriber-acf-form.php:190
+msgid "Melhor Rádio Privada"
+msgstr "Best Private Radio"
+
+#: admin/import/subscriber-acf-form.php:191
+msgid "Melhor Programa de Rádio"
+msgstr "Best Radio Program"
+
+#: admin/import/subscriber-acf-form.php:192
+msgid "Melhor Canal de Youtube"
+msgstr "Best Youtube channel"
+
+#: admin/import/subscriber-acf-form.php:193
+msgid "Melhor Plataforma de Negócio"
+msgstr "Best Business Platform"
+
+#: admin/import/subscriber-acf-form.php:194
+msgid "Melhor Lojas Digital e E-Commerce de Música"
+msgstr "Best Digital Stores and Music E-Commerces"
+
+#: admin/import/subscriber-acf-form.php:208
+msgid ""
+"Inscrição em nome de terceiros [ Artista | Autor | Profissional da Música | "
+"Empresa | Projeto e/ou Empreendimento Musical]"
+msgstr ""
+"Inscriptions on behalf of others [Artist | Author | Music Professional | "
+"Company | Project and / or Musical Enterprise]"
+
+#: admin/import/subscriber-acf-form.php:219
+msgid "Selecione essa opção se deseja inscrever outra pessoa"
+msgstr "Select this option if you want to sign someone else"
+
+#: admin/import/subscriber-acf-form.php:224
+msgid "Nome do inscrito"
+msgstr "Register name"
+
+#: admin/import/subscriber-acf-form.php:253
+msgid "Links para avaliação"
+msgstr "Links to rate"
+
+#: admin/import/subscriber-acf-form.php:267
+msgid "Novo link"
+msgstr "New link"
+
+#: admin/import/subscriber-acf-form.php:274
+msgid "Não serão aceitos links provenientes do Facebook"
+msgstr "Facebook links will not be accepted"
+
+#~ msgid "Melhor Plataformas de Negócio"
+#~ msgstr "Best Business Platforms"
+
+#~ msgid "Melhor Plataforma Digital"
+#~ msgstr "Best Digital Platform"
+
+#~ msgid "Inscrição em nome de terceiros"
+#~ msgstr "Inscription on behalf of others"
+
+#~ msgid "Inscrição em nome de"
+#~ msgstr "In name of"
+
+#~ msgid "Não serão aceitos links provenientes do facebook"
+#~ msgstr "No links will be accepted from facebook"
