@@ -1151,12 +1151,14 @@ h2.descricao {
 }
 
 .box {
-	margin: 3% 5%;
+	margin: 3% 0;
 }
 
 /******BOXES 1
 ********/
-
+.well {
+	min-height: 320px !important;
+}
 .ab1 .well {
 	background-color: #fff;
 	border-top: 2px solid #EDCE00;
@@ -1171,8 +1173,14 @@ h2.descricao {
 	font-size: 12px;
 }
 
-.img {
-	margin: 5% 8%;
+.well .img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.well .img img{
+	width: 100%;
+	height: auto;
 }
 
 .ab1 .well span img {
@@ -1185,11 +1193,20 @@ h2.descricao {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: bold;
+	color: #222;
 }
 
 .t1 {
 	padding: 5px 25px;
 	border-bottom: 1px dotted #000;
+}
+
+.t1 a{
+	color: #222 !important;
+}
+
+.no-ico-more a > img{
+	display: none;
 }
 
 /******BOXES 2
@@ -1216,14 +1233,6 @@ h2.descricao {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: bold;
-}
-
-.ab2 .well p {
-	text-align: left;
-	width: 252px;
-	margin-top: -40px;
-	margin-left: 50px;
-	font-size: 15px;
 }
 
 .ab2 .well a {
@@ -3275,6 +3284,14 @@ body.user-logged {
 	text-transform: uppercase;
 }
 
+#partners_carousel  h2{
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 #partners_carousel .partner{
 	margin: 0 5px;
 	position: relative;
@@ -3326,7 +3343,7 @@ body.user-logged {
 
 #partners_carousel .center{
 	text-align: center;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 #partners_carousel .center a{
@@ -3346,8 +3363,13 @@ body.user-logged {
 #partners_carousel .cycle-pager i{
 	color: #A5A5A5;
 	margin: 0 3px;
+	cursor: pointer;
 }
 
 #partners_carousel .cycle-pager i.cycle-pager-active{
 	color: #252525;
+}
+
+.col-md-4.ab1 .t1{
+
 }

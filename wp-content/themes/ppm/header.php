@@ -77,16 +77,16 @@
 					</div>
 					<div class="col-sm-6 text-right">
 						<a class="btn btn-inscriptions btn-default" href="<?php if (current_lang() == 'pt') {
-							echo home_url() . '/inscricao';
+							echo home_url() . '/votacao';
 						} else {
-							echo home_url() . '/inscription';
+							echo home_url() . '/votacao';
 						}; ?>" role="button"><?php if (current_lang() == 'pt') {
-								echo 'Faça sua inscrição aqui!';
+								echo 'Vote aqui!';
 							} else {
-								echo 'Sign up here!';
+								echo 'Vote here!';
 							}; ?></a>
 						<?php
-						$args = array(
+						/* $args = array(
 							'post_type' => 'inscricao',
 							'author' => $current_user->ID
 						);
@@ -105,7 +105,7 @@
 								} else {
 									echo 'Follow your subscriptions';
 								}; ?></a>
-						<?php endif; ?>
+						<?php endif; */ ?>
 					</div>
 				</div>
 			</div>
@@ -148,13 +148,13 @@
 								echo home_url() . '/inscription';
 							}; ?>"><?php _e('Cadastro', 'ppm_lang'); ?></a>
 						</li>
-						<li class="entrar">
+						<!-- <li class="entrar">
 							<a id="entrar1" href="<?php if (current_lang() == 'pt') {
 								echo home_url() . '/profile/register/';
 							} else {
 								echo home_url() . '/register';
 							}; ?>"><?php _e('Entrar', 'ppm_lang'); ?></a>
-						</li>
+						</li> -->
 					<?php endif; ?>
 					<li class="facebook">
 						<a id="facebook" href="https://www.facebook.com/ppm2015/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/face.png" alt=""></a>

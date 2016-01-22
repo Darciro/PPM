@@ -55,6 +55,7 @@ class Ppm_Inscricao_Admin {
 		$this->add_ppm_shortcode();
 		$this->add_ppm_performed_subscriptions_shortcode();
 		$this->add_ppm_voting_shortcode();
+		$this->add_ppm_subscriptions_shortcode();
 		$this->add_ppm_get_votes_shortcode();
 		// $this->add_ppm_subscriptions_link();
 
@@ -357,6 +358,128 @@ class Ppm_Inscricao_Admin {
 			</form>-->
 		<?php }
 		add_shortcode( 'ppm_voting_shortcode', 'the_ppm_voting_shortcode' );
+	}
+
+	/**
+	 * Create a shortcode for list subscriptions [ppm_subscriptions_shortcode]
+	 *
+	 */
+	public function add_ppm_subscriptions_shortcode(){
+		function the_ppm_subscriptions_shortcode(){
+			global $post;
+			$current_user = wp_get_current_user();
+			$check_if_user_voted = get_user_meta( $current_user->ID, '_already_voted', true );
+
+			function clean_name ( $var ){
+				// strip out all whitespace
+				$var = preg_replace('/\s+/', '-', $var);
+				// strip out all special chars
+				$var = preg_replace('/[^A-Za-z0-9]/', '-', $var);
+				// convert the string to all lowercase
+				$var = strtolower($var);
+				return $var;
+			}
+
+			/*if( $check_if_user_voted ):
+				echo 'Usuário já votou';
+			endif;
+			if(isset($_POST['votation-submitted'])) {
+				echo '<pre>';
+				var_dump($_POST);
+				echo '</pre>';
+				add_user_meta( $current_user->ID, '_already_voted', true);
+				add_user_meta( $current_user->ID, '_votation_result', $_POST);
+			}*/
+
+			$args = array(
+				'post_type' => 'inscricao',
+				'post_status' => 'publish',
+				'posts_per_page' => -1,
+				'meta_query' => array(
+					array(
+						'key' => 'inscricao_0_modalidades',
+						// 'value'   => 'Criação',
+						// 'value' => 'Produção',
+						// 'value'   => 'Convergência',
+						'compare' => 'LIKE',
+					),
+				),
+				'orderby' => 'meta_value',
+				// 'meta_key' => 'inscricao_0_categorias_de_criacao',
+				'order' => 'ASC',
+			);
+
+			$i = 1;
+			$all_creation_query = new WP_Query($args); ?>
+			<?php if ($all_creation_query->have_posts()) : while ($all_creation_query->have_posts()) : $all_creation_query->the_post(); ?>
+				<?php
+				$metas = get_post_meta( $post->ID );
+				$metas_cat_1 = get_post_meta( $post->ID, 'inscricao_0_categorias_de_criacao' ); 
+
+				$user = get_user_by('id', $post->post_author);
+				$user_fullname = get_user_meta($post->post_author, 'ppm_fullname');
+				if (!$user_fullname[0]) {
+					$name = $user->user_nicename;
+				} else {
+					$name = $user_fullname[0];
+				}
+				$email = $user->user_email;
+				?>
+				<?php
+				if (have_rows('inscricao', $post->ID)):
+
+					// loop through the rows of data
+					while (have_rows('inscricao', $post->ID)) : the_row();
+						// echo '<p>Modalidade: ' . get_sub_field('modalidades') . '</p>';
+						if (get_sub_field('modalidades') == 'Criação') {
+							// echo '<p>Categoria: ' . get_sub_field('categorias_de_criacao') . '</p>';
+							$modal_cat = get_sub_field('categorias_de_criacao');
+						} else if (get_sub_field('modalidades') == 'Produção') {
+							// echo '<p>Categoria: ' . get_sub_field('categorias_de_producao') . '</p>';
+							$modal_cat = get_sub_field('categorias_de_producao');
+						} else if (get_sub_field('modalidades') == 'Convergência') {
+							// echo '<p>Categoria: ' . get_sub_field('categorias_de_convergencia') . '</p>';
+							$modal_cat = get_sub_field('categorias_de_convergencia');
+						}
+
+						?>
+						<div class="<?php echo clean_name( $modal_cat ); ?>">
+						<?php if( get_sub_field('inscricao_terceiros') ){
+							$subscribed_name = get_sub_field('nome_terceiro');
+						}else{
+							$subscribed_name = $name;
+						} ?>
+							<label>
+								<?php echo $subscribed_name; ?>
+							</label>
+						<?php if (have_rows('links_para_avaliacao')):
+							// loop through links
+							while (have_rows('links_para_avaliacao')) : the_row();
+								echo '<p class="hidden"><a class="btn btn-default btn-xs" href="' . get_sub_field('link') . '" target="_blank">' . get_sub_field('link') . '</a></p>';
+							endwhile;
+						else :
+							// No links found
+						endif;
+						echo '<br/></div>';
+					endwhile;
+
+				else :
+
+					// no rows found
+
+				endif;
+
+				?>
+
+				<?php $i++; endwhile;
+			else: ?>
+				<p>Sorry, no posts to list</p>
+			<?php endif; ?>
+				<!--<button type="submit">Enviar</button>
+				<input type="hidden" name="votation-submitted" id="votation-submitted" value="true" />
+			</form>-->
+		<?php }
+		add_shortcode( 'ppm_subscriptions_shortcode', 'the_ppm_subscriptions_shortcode' );
 	}
 
 	/**

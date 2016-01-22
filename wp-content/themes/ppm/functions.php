@@ -166,6 +166,7 @@ function current_lang()
  */
 function redirect_to_auth()
 {
+	global $post;
 	$auth_required = get_field('auth_required', $post->ID);
 
 	if ($auth_required || is_page() && !is_user_logged_in() && is_page('inscricao')) {

@@ -130,7 +130,7 @@
 
 	function clearChoices(choice){
 		$('.cat-choice').each(function (i, el) {
-			console.log( i, $(this).find('input[type=radio]').val() );
+			// console.log( i, $(this).find('input[type=radio]').val() );
 			if( !$(this).find('p').length ){
 				$(this).addClass('hidden');
 			}
@@ -146,8 +146,6 @@
 
 
 	$('#confirmation-btn').on( 'click', function(){
-		console.log( 'confirmation-btn clickd' );
-
 		var form = $('#votation-form');
 		var choices = form.find('input[type=radio]:checked');
 		var choicesChecked = $(choices).map(function() {

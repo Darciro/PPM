@@ -138,7 +138,7 @@
     </div>
 </div>
 <div class="section1">
-    <div class="container-fluid">
+    <div class="container">
         <div class="box">
             <div class="row">
                 <?php
@@ -159,7 +159,7 @@
                                         <?php
                                         if( $options_post['imagem_destaque'] ):
                                             if ( has_post_thumbnail( $options_post['post_home']->ID ) ) {
-                                                the_post_thumbnail( 'post-cover' );
+                                                echo get_the_post_thumbnail( $options_post['post_home']->ID, 'post-cover' );
                                             }
                                         endif;
                                         ?>
@@ -454,6 +454,7 @@
     <div id="partners_carousel" class="container">
         <div class="row">
             <div class="col-sm-12">
+                <h2><?php _e( 'Apoiadores', 'ppm_lang' ); ?></h2>
                 <?php $carousel_itens = get_field('itens_do_carrossel', 'option'); // echo '<pre>'; var_dump($carousel_itens); echo '</pre>'; ?>
                 <div class="center">
                     <a href="#" id="prev"><i class="fa fa-angle-left"></i></a>
