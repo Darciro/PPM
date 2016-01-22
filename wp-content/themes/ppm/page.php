@@ -44,9 +44,9 @@ get_header(); ?>
 									<h2><?php the_title() ;?></h2>
 								</div>
 		
-								<?php the_post_thumbnail('large'); ?>
 								<div class="panel panel-default">
 									<div class="panel-body">
+										<?php // the_post_thumbnail('large'); ?>
 										<?php the_content(); ?>
 									</div>
 								</div>

@@ -2,12 +2,33 @@
 	<div class="container">
 		<div class="botoes">
 			<ul class="text-center">
-				<li class="inc2">
-					<a id="inc2" href="<?php echo home_url() ?>/inscricao"><?php _e( 'Inscreva-se', 'ppm_lang' ); ?></a>
-				</li>
-				<li class="entrar2" >
-					<a id="entrar2"href="<?php echo home_url(); ?>/register"><?php _e( 'Entrar', 'ppm_lang' ); ?></a>
-				</li>
+				<?php if (!is_user_logged_in()): ?>
+					<li class="inc2">
+						<a id="inc2" href="<?php if (current_lang() == 'pt') {
+							echo home_url() . '/profile/login /';
+						} else {
+							echo home_url() . '/login';
+						}; ?>"><?php _e('Vote Aqui', 'ppm_lang'); ?></a>
+					</li>
+					<li class="entrar2">
+						<a id="entrar2" href="<?php if (current_lang() == 'pt') {
+							echo home_url() . '/inscricao';
+						} else {
+							echo home_url() . '/inscription';
+						}; ?>"><?php _e('Cadastro', 'ppm_lang'); ?></a>
+					</li>
+				<?php else: ?>
+					<li class="inc2">
+						<a id="inc2" href="<?php if (current_lang() == 'pt') {
+							echo home_url() . '/votacao/';
+						} else {
+							echo home_url() . '/votacao';
+						}; ?>"><?php _e('Vote Aqui', 'ppm_lang'); ?></a>
+					</li>
+					<li class="entrar2" >
+						<a id="entrar2"href="<?php echo home_url(); ?>/register"><?php _e( 'Cadastro', 'ppm_lang' ); ?></a>
+					</li>
+				<?php endif; ?>
 			</ul>
 		</div>
 	</div>

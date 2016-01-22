@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-<div id="content" class="page-votation container all-inscriptions">
+<div id="content" class="page-votation subscribers container all-inscriptions">
 	<div class="row">
 		<div class="box-interna">
 			<div class="col-md-12">

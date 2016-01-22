@@ -157,11 +157,13 @@
                                     </div>
                                     <div class="img">
                                         <?php
-                                        if( $options_post['imagem_destaque'] ):
-                                            if ( has_post_thumbnail( $options_post['post_home']->ID ) ) {
+                                        if( $options_post['imagem_destaque'] ): ?>
+                                    	<a href="<?php echo get_permalink( $options_post['post_home']->ID ); ?>">
+                                            <?php if ( has_post_thumbnail( $options_post['post_home']->ID ) ) {
                                                 echo get_the_post_thumbnail( $options_post['post_home']->ID, 'post-cover' );
-                                            }
-                                        endif;
+                                            } ?>
+                                        </a>
+                                        <?php endif;
                                         ?>
                                     </div>
                                     <?php
@@ -436,7 +438,7 @@
                     // Get the URL of this category
                     $category_link = get_category_link( $category_id );
                     ?>
-                    <a href="<?php echo esc_url( $category_link ); ?>"><?php _e('Todas as notícias', 'ppm_lang'); ?></a>
+                    <a href="<?php echo esc_url( $category_link ); ?>"><?php _e('Mais notícias', 'ppm_lang'); ?></a>
                 </div>
 
             <?php else: ?>
@@ -454,7 +456,7 @@
     <div id="partners_carousel" class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2><?php _e( 'Apoiadores', 'ppm_lang' ); ?></h2>
+                <h2><?php _e( 'Créditos', 'ppm_lang' ); ?></h2>
                 <?php $carousel_itens = get_field('itens_do_carrossel', 'option'); // echo '<pre>'; var_dump($carousel_itens); echo '</pre>'; ?>
                 <div class="center">
                     <a href="#" id="prev"><i class="fa fa-angle-left"></i></a>
@@ -463,12 +465,11 @@
                 <div class="cycle-slideshow"
                     data-cycle-log="false"
                     data-cycle-fx="carousel"
-                    data-cycle-timeout="0"
+                    data-cycle-timeout="3000"
                     data-cycle-carousel-visible="5"
                     data-cycle-next="#next"
                     data-cycle-prev="#prev"
                     data-cycle-pager="#pager"
-                    data-cycle-carousel-fluid="true"
                     data-cycle-pager-template='<i class="fa fa-circle"></i>'
                     data-cycle-slides="> .partner"
                     >
@@ -477,14 +478,14 @@
                             <div class="relative-box">
                             <?php if( $carousel_item['link'] !== '' ){ echo '<a href="' . $carousel_item['link'] . '">'; } ?>
                                 <span><?php if( $carousel_item['texto'] !== '' ){ echo $carousel_item['texto']; } ?></span>
-                                <img src="<?php echo $carousel_item['imagem']['sizes']['archive-thumb']; ?>">
+                                <img src="<?php echo $carousel_item['imagem']['sizes']['medium']; ?>">
                             <?php if( $carousel_item['link'] !== '' ){ echo '</a>'; } ?>
                             </div>
                         </div>
                     <?php } ?>
                 </div>
 
-                <div class="cycle-pager" id="pager"></div>
+                <div class="cycle-pager hidden" id="pager"></div>
             </div>
         </div>
     </div>

@@ -129,9 +129,9 @@
 					<?php if (!is_user_logged_in()): ?>
 						<li class="entrar">
 							<a id="entrar1" href="<?php if (current_lang() == 'pt') {
-								echo home_url() . '/profile/register/';
+								echo home_url() . '/profile/login /';
 							} else {
-								echo home_url() . '/register';
+								echo home_url() . '/login';
 							}; ?>"><?php _e('Vote Aqui', 'ppm_lang'); ?></a>
 						</li>
 						<!--<li class="inc">
